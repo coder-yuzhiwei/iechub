@@ -63,6 +63,14 @@
 
 
 
+## 数据中心技术
+
+1. 【仓库】[github课件](https://github.com/cs-course/data-center-course)
+2. 【仓库】[作业题目](https://github.com/ShiZhan/obs-tutorial)
+3. 【仓库】[作业提交](https://github.com/cs-course/data-center-course-assignment-2021)
+
+
+
 ## 其他
 
 1. 【教程】[菜鸟 Markdown语法](https://www.runoob.com/markdown/md-tutorial.html)
