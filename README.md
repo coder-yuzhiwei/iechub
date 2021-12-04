@@ -65,9 +65,15 @@
 
 ## 数据中心技术
 
-1. 【仓库】[github课件](https://github.com/cs-course/data-center-course)
-2. 【仓库】[作业题目](https://github.com/ShiZhan/obs-tutorial)
+1. 【仓库】[课件](https://github.com/cs-course/data-center-course)
+2. 【仓库】[实验题目](https://github.com/ShiZhan/obs-tutorial)
 3. 【仓库】[作业提交](https://github.com/cs-course/data-center-course-assignment-2021)
+
+
+
+## 嵌入式
+
+1. 【仓库】[codec63指令集参考](https://github.com/qxy65535/homework)
 
 
 
