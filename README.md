@@ -60,8 +60,7 @@
 ## 区块链
 
 1. 【仓库】[共识算法参考](https://github.com/corgi-kx/blockchain_consensus_algorithm)
-
-
+2. 【仓库】[课设仓库](https://github.com/coder-yuzhiwei/Blockchain)
 
 ## 数据中心技术
 
@@ -73,7 +72,7 @@
 
 ## 嵌入式
 
-1. 【仓库】[codec63指令集参考](https://github.com/qxy65535/homework)
+1. 【仓库】[codec63指令集优化参考](https://github.com/qxy65535/homework)
 
 
 
