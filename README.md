@@ -91,3 +91,64 @@
 
 【项目】【教程】【在线教程】【博客】【书籍】【速查】【仓库】
 
+
+
+## 命令速查
+
+### Anaconda
+
+##### 1. 创建环境
+
+```sh
+conda create -n env_name python=x.x
+```
+
+##### 2. 查看环境列表
+
+```sh
+conda env list
+```
+
+##### 3. 激活环境
+
+```sh
+conda activate env_name
+```
+
+##### 4. 删除环境
+
+```sh
+conda remove --name env_name --all
+```
+
+##### 5. 查看环境中的包
+
+```sh
+conda list
+```
+
+##### 6. 安装包
+
+```sh
+conda install package_name[=x.x.x]
+pip install package_name[=x.x.x]
+```
+
+##### 7. 更新包
+
+```sh
+conda update package_name
+pip update package_name
+```
+
+##### 8. 卸载包
+
+```sh
+conda uninstall package_name
+pip uninstall package_name
+```
+
+### Jupyter
+
+【博客】[Jupyter Notebook 使用的详细指南-知乎](https://zhuanlan.zhihu.com/p/146288279)
+
