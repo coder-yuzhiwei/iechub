@@ -9,39 +9,28 @@
 
 #### 入门
 
-1. 【项目】[Github FudanNLP/nlp-beginner](https://github.com/FudanNLP/nlp-beginner)
-
-   - 【书籍】[邱锡鹏 神经网络与深度学习](https://nndl.github.io/nndl-book.pdf)
-
-     学习深度学习的数学原理
-
-   - 【项目】[jupyter nlp-beginner的参考答案1](https://github.com/htfhxx/nlp-beginner_solution)
-
-   - 【项目】[py源码 nlp-beginner的参考答案2](https://github.com/0oTedo0/NLP-Beginner)
-
-     在Github上搜索更多参考答案
-
-2. 【在线教程】[百度飞桨 零基础实践深度学习](https://www.paddlepaddle.org.cn/tutorials/projectdetail/1990733)
-
-   学完前言到第二章，能够快速入门深度学习并熟练使用飞桨框架。
-
-   - 【教程】[菜鸟 NumPy](https://www.runoob.com/numpy/numpy-tutorial.html)
-
-3. 【博客】[知乎 Anaconda入门](https://zhuanlan.zhihu.com/p/348120084)
-
-   快速理解和使用Anaconda，以便在自己的机器上安装深度学习框架。
-
-4. 【在线教程】[自然语言处理综述](https://www.paddlepaddle.org.cn/tutorials/projectdetail/2201245)
+1. 【课程】[李沐 动手学深度学习](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497) 斯坦福公开课，由李沐老师中文讲述，从基础数学讲起，视频以及代码资料齐全，系统。
+2. 【在线教程】[零基础实践深度学习](https://www.paddlepaddle.org.cn/tutorials/projectdetail/3465990) 百度在线教程，代码资料都在线运行，不必安装环境，从简单到复杂写代码实践深度学习，采用百度自研的paddlepaddle深度学习框架。
+3. 【书籍】[邱锡鹏 神经网络与深度学习](https://nndl.github.io/nndl-book.pdf) 复旦大学，全面介绍深度学习，配套资源均在Github，也有[课程视频](https://www.bilibili.com/video/BV13b4y1177W?spm_id_from=333.999.0.0)
+4. 【书籍】[从零构建知识图谱：技术、方法与案例](https://weread.qq.com/web/reader/3b332a007260a5613b3feb6)
+5. 【博客】[菜鸟 NumPy](https://www.runoob.com/numpy/numpy-tutorial.html)
 
 #### 中级
 
-1. 【在线教程】[百度飞桨 词向量Word Embedding](https://www.paddlepaddle.org.cn/tutorials/projectdetail/2201246)
-2. 【视频】[B站 Transformer讲解](https://www.bilibili.com/video/BV1Di4y1c7Zm)
-3. 【视频】[B站 BERT讲解](https://www.bilibili.com/video/BV1Ey4y1874y)
+1. 实践开源项目
+2. 强化数学知识
 
 #### 精通
 
-1. 【比赛】[2021 CCF BDCI 千言-问题匹配鲁棒性评测](https://aistudio.baidu.com/aistudio/competition/detail/116/0/introduction)
+1. 阅读论文
+2. 参加比赛
+
+### 资源
+
+#### 百度系
+
+1. 【项目官网】[PaddleNlp](https://paddlenlp.readthedocs.io/zh/latest/index.html)
+
 
 
 
@@ -60,7 +49,10 @@
 ## 区块链
 
 1. 【仓库】[共识算法参考](https://github.com/corgi-kx/blockchain_consensus_algorithm)
+
 2. 【仓库】[课设仓库](https://github.com/coder-yuzhiwei/Blockchain)
+
+   
 
 ## 数据中心技术
 
@@ -76,9 +68,21 @@
 
 
 
+## Linux
+
+1. 【速查】[菜鸟 Linux常用命令](https://www.runoob.com/linux/linux-command-manual.html)
+
+
+
+## Python
+
+1. 【博客】[知乎 Jupyter Notebook 使用的详细指南](https://zhuanlan.zhihu.com/p/146288279)
+
+
+
 ## 其他
 
-1. 【教程】[菜鸟 Markdown语法](https://www.runoob.com/markdown/md-tutorial.html)
+1. 【博客】[菜鸟 Markdown语法](https://www.runoob.com/markdown/md-tutorial.html)
 2. 【速查】[git常用命令](https://github.com/arslanbilal/git-cheat-sheet)
 
 
@@ -89,7 +93,7 @@
 
 ### 标签
 
-【项目】【教程】【在线教程】【博客】【书籍】【速查】【仓库】
+【仓库】【项目官网】【在线教程】【博客】【书籍】【速查】【课程】【论文】
 
 
 
@@ -147,8 +151,4 @@ pip update package_name
 conda uninstall package_name
 pip uninstall package_name
 ```
-
-### Jupyter
-
-【博客】[Jupyter Notebook 使用的详细指南-知乎](https://zhuanlan.zhihu.com/p/146288279)
 
