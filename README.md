@@ -27,9 +27,15 @@
 
 ### 资源
 
-#### 百度系
+#### 知名网站
 
-1. 【项目官网】[PaddleNlp](https://paddlenlp.readthedocs.io/zh/latest/index.html)
+1. 【官网】[PaddleNlp](https://paddlenlp.readthedocs.io/zh/latest/index.html)
+2. 【官网】[NLP任务排行榜](http://nlpprogress.com/)
+3. 【官网】[中文NLP任务排行榜](https://chinesenlp.xyz/#/)
+
+#### 语料
+
+1. 【仓库】[Chinese-NLP-Corpus](https://github.com/OYE93/Chinese-NLP-Corpus)
 
 
 
@@ -93,7 +99,7 @@
 
 ### 标签
 
-【仓库】【项目官网】【在线教程】【博客】【书籍】【速查】【课程】【论文】
+【仓库】【官网】【在线教程】【博客】【书籍】【速查】【课程】【论文】
 
 
 
