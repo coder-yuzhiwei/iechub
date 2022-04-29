@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
+            -webkit-text-fill-color: #ededed !important;
+            -webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;
+            background-color:transparent;
+            background-image: none;
+            transition: background-color 50000s ease-in-out 0s; //背景色透明  生效时长  过渡效果  启用时延迟的时间
+        }
+        input {
+             background-color:transparent;
+        }
+
+        .center-in-center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        font{
+            color: white;
+            font-size: 13px;
+        }
+
+        .input{
+            position: relative;
+            margin: 30px 0px 20px 60px;
+            background-color: rgba(9,116,106,1);
+            border:1px solid whitesmoke;
+            -webkit-appearance:none;
+            height: 30px;
+            width: 260px;
+            color: whitesmoke;
+        }
+        .input::-webkit-input-placeholder {
+            color: whitesmoke;
+            font-size: 12px;
+        }
+
+        img{
+            width: 30px ;
+            height: 30px;
+        }
+        .msg{
+            margin: 10px 0px 0px 60px;
+            color: #ff662c;
+            font-size: 13px;
+        }
+        .button{
+            margin-left: 65px;
+            width: 90px;
+            height: 35px;
+            color: white;
+            background-color: rgba(2, 154, 142, 0.97);
+            border-width: 0px;
+        }
+        .button:HOVER{
+            background-color: rgba(0, 169, 157, 0.97);
+        }
+        .line{
+            height: 300px;
+            width: 2px;
+            background: -webkit-linear-gradient(left,rgba(255, 255, 255, 0),#5DDDD3,rgba(255,255,255,0));
+            background: linear-gradient(to right, rgba(255, 255, 255, 0),#5DDDD3,rgba(255,255,255,0));
+            margin: 40px 0px 0px 30px;
+        }
+    </style>
+</head>
+<body style="background-color: #143a32">
+    <div>
+    <div style="position: center;background-color: rgba(9,116,106,1);width: 740px;height: 400px" class="center-in-center" >
+        <div style="float:left;" >
+            <div style=" padding: 10px;">
+                <img src="/static/img/1_large.png" >
+            </div>
+            <input type="text" name="username" id="username" placeholder="用 户 名" class="input"><br>
+            <input type="password" name="passwd" id="passwd" placeholder="密 码" class="input" style="margin: 30px 0px 0px 60px;"><br>
+            <span id="msg" class="msg"></span>
+            <div style="margin-top: 30px">
+                <input type="button"  id="register_page" value="注 册" class="button" onclick="register()" >
+                <input type="button" id="login" value="登 录" class="button" onclick="login_user()">
+            </div>
+        </div>
+        <div style="float:left">
+            <div class="line" style="float:left"></div>
+            <div style="padding:50px 0px 0px 50px">
+                <a href="#" style="color: whitesmoke;font-size: 14px;text-decoration: underline">知 识 图 谱</a>
+            </div>
+            <div style="margin: 20px 0px 0px 60px">
+                <span style="font-size: 13px;color: floralwhite;">
+                    知识图谱（Knowledge Graph），在情报界称为知识域可</br>
+                    视化或知识领域映射地图，是显示知识发展进程与结构关<br>
+                    系的一系列各种不同的图形，用可视化技术描述知识资源<br>
+                    及其载体，挖掘、分析、构建、绘制和显示知识及它们之<br>
+                    间的相互联系。
+                </span>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/static/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script>
+    function login_user(){
+        var username = $('#username').val();
+        var passwd = $('#passwd').val();
+        if (username == '' || passwd == '') {
+            alert('用户名或密码不能为空');
+            return false;
+        }
+        else {
+            $.ajax({
+                url : '/user/login/user_login',
+                method: 'post',
+                data :{'username':username, 'passwd':passwd},
+                success:function (data) {
+                    if (data['code'] == 0){
+                        $('#msg').text(data['msg']);
+                    }else{
+                        window.location.href = '/index';
+                    }
+                }
+            });
+        }
+    }
+    function register() {
+        window.location.href = '/register'
+    }
+</script>
+</html>

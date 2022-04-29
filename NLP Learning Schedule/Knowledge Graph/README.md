@@ -1,14 +1,36 @@
 ![](https://github.com/coder-yuzhiwei/iechub/blob/main/source/banner.jpg)
 
-## IEC实验室自然语言处理学习大纲
+## 相关资料
 
-本学习大纲为IEC实验室自然语言处理组的学习资料，学习时间为`5月1日-6月20日`，主要包括机器学习、自然语言处理、深度学习框架课程，三个NLP任务的实践任务以及最终的关系抽取任务评测。请大家在[飞书文档](https://docs.feishu.cn/docs)的IEC共享文件夹内建立自己的目录，更新自己的学习进度。
+### 知识图谱 ###
 
-### 关于最终的学习评测
+[相关概念介绍](https://zhuanlan.zhihu.com/p/441108118)
 
-学习评测在[CCKS2022通用信息抽取竞赛](https://aistudio.baidu.com/aistudio/competition/detail/161/0/introduction)上进行，实验室将在6月底对大家的学习成果进行评价，并对优秀者进行奖励。以下是评测说明：
+[基础知识学习视频](https://www.bilibili.com/video/BV17s411n75M?p=1)
 
-- 以个人为单位报名，验证数据已于4月25日发布，大家可以直接在比赛界面提交结果，**每天至多提交三次结果**。
-- 提交后需要在飞书文档上更新自己的提交记录，说明本次提交做了哪些工作（如模型调参、数据增强等），最终实验室会根据提交记录和打榜成绩综合评价大家的学习成果。
-- 本次比赛赛题综合了多个抽取子任务，已公布的Seen Schema中6个抽取框架中，子任务难度各有不同，建议从“人生信息”和“影视情感”开始着手。
+
+
+## 知识图谱的构建和可视化展示系统
+
+### 版本依赖
+
+```
+paddle 1.5
+python 3.6.5
+```
+
+### 快速部署
+
+1. 按照[使用手册](.user_guide.docx)配置软件环境
+2. 软件执行
+
+```
+启动conda服务
+conda activate 709
+启动uwsgi服务
+uwsgi -x demo.xml
+启动nginx服务
+sudo /user/local/nginx/sbin/nginx
+打开浏览器，输入前面配置的ip地址（默认为127.0.0.1）
+```
 

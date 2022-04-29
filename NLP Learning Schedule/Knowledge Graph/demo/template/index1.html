@@ -1,0 +1,347 @@
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/main.css">
+        {#        <link rel="stylesheet" href="/static/autocomplete.css">#}
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="stylesheet" href="/static/option.css">
+        <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/dist/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="/static/dist/css/layer.css">
+<style>
+.autocomplete-container {
+    position: relative;
+    width: 283px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.autocomplete-input {
+    padding: 13px;
+    border-radius: 10px;
+    font-family: inherit;
+    float: left;
+    font-size: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+.autocomplete-button {
+    font-family: inherit;
+    border: none;
+    background-color: #635c5c;
+    color: white;
+    cursor: pointer;
+    border-radius: 0px 3px 3px 0px;
+    transition: all 0.2s ease-out 0s;
+    margin: -20px 0px 0px 40px;
+}
+
+.autocomplete-button:HOVER {
+    background-color: #9d9595;
+}
+
+.proposal-box {
+    position: absolute;
+    height: auto;
+    border-left: 1px solid rgba(0, 0, 0, 0.11);
+    border-right: 1px solid rgba(0, 0, 0, 0.11);
+    left: 0px;
+}
+
+.proposal-list {
+    list-style: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+.proposal-list li {
+    text-align: left;
+    padding: 5px;
+    font-family: inherit;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    height: 25px;
+    line-height: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+li.proposal.selected {
+    background-color: rgba(175, 42, 0, 0.52);
+    color: white;
+}
+    .btn{
+        border-radius:10px;
+    }
+
+</style>
+    </head>
+    <body>
+        <div id="demo" style="padding: 50px; height: 10px;">
+            <div class="wrapper" style="float: left;">
+                <div id="search"  style=" margin: 0px 0px 0px 350px "></div>
+            </div>
+            <div style="float: left; margin: 0px 0px 0px 0px ">
+                <select id="relation" class="selectpicker" multiple data-live-search="true" data-actions-box="true"></select>
+                <input type="button" id="search_data" value="Search" class="autocomplete-button" style=" display: inline-block;border-radius: 3px;height: 39px;width: 100px;line-height: 33px;"></input>
+            </div>
+        </div>
+        <script src="/static/jquery-3.1.1.js"></script>
+{#        <script src="/static/jquery.autocompleter.js"></script>#}
+{#        <script src="/static/main.js"></script>#}
+        <script src="/static/d3.js"></script>
+        <script type="text/javascript" src="/static/autocomplete.js"></script>
+        <script type="text/javascript" src="/static/option.js"></script>
+        <script type="text/javascript" src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/dist/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="/static/dist/js/layer.js"></script>
+
+
+
+<script>
+
+
+var proposals={{ tips|safe }}
+$(function(){
+    loads([]);
+	$('#search').autocomplete({
+		hints: proposals,
+        placeholder: 'Entity',
+		width: 300,
+		height: 30,
+        showButton: false,
+        onSubmit: function(text){
+			$.ajax({
+                url:'/get_relation?key='+text,
+                method:'get',
+                success:function (data) {
+                    $("#relation").empty();
+                    for (var i=0;i<data.relation.length;i++){
+                         $("#relation").append($("<option value='"+data.relation[i]+"'>"+data.relation[i]+"</option>"));
+                    }
+                    $('#relation').selectpicker('refresh');
+                }
+            })
+		}
+	});
+	$('#search_data').click(function () {
+	    var entity = $('#addressInput').val();
+	    var attribute = $('#relation').val();
+	    $.ajax({
+            url:'/get_kgdata',
+            data:{'entity':entity,'attribute':attribute},
+            method: 'post',
+            success:function (data) {
+                console.log(data.kgdata);
+                loads(data.kgdata);
+            }
+        });
+
+
+    })
+
+});
+</script>
+
+<script>
+    function loads(data) {
+            console.log(data);
+            var links =[];
+            if (data.length!=0){
+                 links=data;
+             }
+            var nodes = {};
+
+			links.forEach(function(link)
+			{
+			  link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
+			  link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
+			});
+			var width = 1650, height =690;
+            if (data.length>50){
+                height = data.length/10 * 150;
+            }
+
+
+			var force = d3.layout.force()
+				.nodes(d3.values(nodes))
+				.links(links)
+				.size([width, height])
+				.linkDistance(190)
+				.charge(-1800)
+				.on("tick", tick)
+				.start();
+			d3.selectAll("svg").remove();	// 移除svg节点
+			var svg = d3.select("body").append("svg")
+				.attr("width", width)
+				.attr("height", height);
+            $("svg").css('padding','-200px 0px 0px 0px');
+			var marker=
+				svg.append("marker")
+				.attr("id", "resolved")
+				.attr("markerUnits","userSpaceOnUse")
+				.attr("viewBox", "0 -5 10 10")
+				.attr("refX",32)
+				.attr("refY", -1)
+				.attr("markerWidth", 12)
+				.attr("markerHeight", 12)
+				.attr("orient", "auto")
+				.attr("stroke-width",2)
+				.append("path")
+				.attr("d", "M0,-5L10,0L0,5")
+				.attr('fill','#000000');
+
+			var edges_line = svg.selectAll(".edgepath")
+				.data(force.links())
+				.enter()
+				.append("path")
+				.attr({
+					  'd': function(d) {return 'M '+d.source.x+' '+d.source.y+' L '+ d.target.x +' '+d.target.y},
+					  'class':'edgepath',
+					  'id':function(d,i) {return 'edgepath'+i;}})
+				.style("stroke",function(d){
+					 var lineColor;
+					 lineColor="#B43232";
+					 return lineColor;
+				 })
+				.style("pointer-events", "none")
+				.style("stroke-width",0.5)
+				.attr("marker-end", "url(#resolved)" );
+
+			var edges_text = svg.append("g").selectAll(".edgelabel")
+			.data(force.links())
+			.enter()
+			.append("text")
+			.style("pointer-events", "none")
+			.attr({  'class':'edgelabel',
+						   'id':function(d,i){return 'edgepath'+i;},
+						   'dx':80,
+						   'dy':0
+						   });
+
+			edges_text.append('textPath')
+			.attr('xlink:href',function(d,i) {return '#edgepath'+i})
+			.style("fill", "#ffffff")
+			.text(function(d){return d.rela;});
+
+			var circle = svg.append("g").selectAll("circle")
+				.data(force.nodes())
+				.enter().append("circle")
+				.style("fill",function(node){
+					var color;
+					var link=links[node.index];
+					color="black";
+					return color;
+				})
+				.style('stroke',function(node){
+					var color;
+					var link=links[node.index];
+					color="#A254A2";
+					return color;
+				})
+				.attr("r", 28)
+                .on('dblclick',function (node) {
+                    $.ajax({
+                        url:'/get_attribute?entity='+node.name,
+                        method:'get',
+                        success:function (data) {
+                            console.log(data);
+                            layer.open({
+                              type: 0,
+                              skin: 'layui-layer-demo', //加上边框
+                              area: ['420px', '240px'], //宽高
+                              content: data.data
+                            });
+                        }
+                    });
+                })
+				.call(force.drag);
+
+			var text = svg.append("g").selectAll("text")
+				.data(force.nodes())
+				.enter()
+				.append("text")
+				.attr("dy", ".35em")
+				.attr("text-anchor", "middle")
+				.style('fill',function(node){
+					var color;
+					var link=links[node.index];
+					color="#ffffff";
+					return color;
+				}).attr('x',function(d){
+					var re_en = /[a-zA-Z]+/g;
+					if(d.name.match(re_en)){
+						 d3.select(this).append('tspan')
+						 .attr('x',0)
+						 .attr('y',2)
+						 .text(function(){return d.name;});
+					}
+
+					else if(d.name.length<=4){
+						 d3.select(this).append('tspan')
+						.attr('x',0)
+						.attr('y',2)
+						.text(function(){return d.name;});
+					}else{
+						var top=d.name.substring(0,4);
+						var bot=d.name.substring(4,d.name.length);
+
+						d3.select(this).text(function(){return '';});
+
+						d3.select(this).append('tspan')
+							.attr('x',0)
+							.attr('y',-7)
+							.text(function(){return top;});
+
+						d3.select(this).append('tspan')
+							.attr('x',0)
+							.attr('y',10)
+							.text(function(){return bot;});
+					}
+				});
+
+			function tick() {
+			  circle.attr("transform", transform1);
+			  text.attr("transform", transform2);
+
+			  edges_line.attr('d', function(d) {
+				  var path='M '+d.source.x+' '+d.source.y+' L '+ d.target.x +' '+d.target.y;
+				  return path;
+			  });
+
+			  edges_text.attr('transform',function(d,i){
+					if (d.target.x<d.source.x){
+						bbox = this.getBBox();
+						rx = bbox.x+bbox.width/2;
+						ry = bbox.y+bbox.height/2;
+						return 'rotate(180 '+rx+' '+ry+')';
+					}
+					else {
+						return 'rotate(0)';
+					}
+			   });
+			}
+
+			function linkArc(d) {
+			  return 'M '+d.source.x+' '+d.source.y+' L '+ d.target.x +' '+d.target.y
+			}
+
+			function transform1(d) {
+			  return "translate(" + d.x + "," + d.y + ")";
+			}
+			function transform2(d) {
+				  return "translate(" + (d.x) + "," + d.y + ")";
+			}
+
+    }
+
+		</script>
+</body>
+</html>
