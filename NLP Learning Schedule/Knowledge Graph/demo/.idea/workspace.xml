@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9fe59ced-f8b9-4cdf-8c09-b0c8b4f088da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/css/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/fonts/iconfont/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/fonts/iconfont/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/fonts/iconfont/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/fonts/iconfont/iconfont.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/fonts/iconfont/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/fonts/iconfont/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/fonts/iconfont/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/fonts/iconfont/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/LOGO@120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/LOGO@40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/LOGO@80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/LOGO_name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/large/1_large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/large/2_large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/large/3_large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/large/4_large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/large/5_large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/small/1_sml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/small/2_sml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/small/3_sml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/small/4_sml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/img/small/5_sml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/js/JQuery.print.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/js/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/js/bus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/js/deviceRelation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/js/directives.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/js/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/js/permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/js/transformPoint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/lang/YY_EN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/assets/lang/YY_ZH_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Home/AppMain.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Home/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Home/Slider.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Login/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Login/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Manager/ManageModel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Manager/RelationAuto.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Manager/RelationManual.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/OverView/OverView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Search/Search.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Search/SearchRelation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Search/TableShow.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Search/Trace.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Unit/KnowledgeMap.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Unit/Node.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/components/Unit/Table.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/static/data/entity_file.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/src/store/modules/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/709vue/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/709vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/709vue/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/709vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/709vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/709vue/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/709vue/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/709vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/709vue/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/709vue/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/709vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/709vue/src/main.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/demo$urls.coverage" NAME="urls Coverage Results" MODIFIED="1603871061482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/navigation" />
+    <SUITE FILE_PATH="coverage/demo$test.coverage" NAME="test Coverage Results" MODIFIED="1605856868957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
+    <SUITE FILE_PATH="coverage/demo$models.coverage" NAME="models Coverage Results" MODIFIED="1604912371902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/navigation" />
+    <SUITE FILE_PATH="coverage/demo$models__1_.coverage" NAME="models (1) Coverage Results" MODIFIED="1603781659323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/navigation" />
+    <SUITE FILE_PATH="coverage/demo$tests.coverage" NAME="tests Coverage Results" MODIFIED="1607340933921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user" />
+    <SUITE FILE_PATH="coverage/demo$database.coverage" NAME="database Coverage Results" MODIFIED="1604910470291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/demo$views.coverage" NAME="views Coverage Results" MODIFIED="1604911954839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/navigation" />
+    <SUITE FILE_PATH="coverage/demo$model.coverage" NAME="model Coverage Results" MODIFIED="1602056427623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigation/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1254">
+              <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigation/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+              <folding>
+                <element signature="e#628#660#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="63" column="23" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>400</find>
+      <find>border-radius</find>
+      <find>fs-option-label</find>
+      <find>print</find>
+      <find>.autocomplete-input</find>
+      <find>.autocomplete-button</find>
+      <find>get_contact</find>
+      <find>edgepath</find>
+      <find>stroke</find>
+      <find>__reset_conn</find>
+      <find>username</find>
+      <find>triple_operate</find>
+      <find>entity_relationship</find>
+      <find>entity_operate</find>
+      <find>triple_submit</find>
+      <find>__execute</find>
+      <find>overViewData</find>
+      <find>OverView</find>
+      <find>STATIC_URL</find>
+      <find>assets</find>
+      <find>homeDiv</find>
+      <find>textData</find>
+      <find>oracle</find>
+      <find>searchClick</find>
+      <find>entity_table</find>
+      <find>query_entity_triple</find>
+      <find>search/stars</find>
+      <find>overview</find>
+      <find>stars</find>
+      <find>update entity</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/709vue" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/js/autocomplete.js" />
+        <option value="$PROJECT_DIR$/template/index.html" />
+        <option value="$PROJECT_DIR$/static/main.css" />
+        <option value="$PROJECT_DIR$/static/jquery.autocompleter.js" />
+        <option value="$PROJECT_DIR$/static/main.js" />
+        <option value="$PROJECT_DIR$/static/style.css" />
+        <option value="$PROJECT_DIR$/static/option.js" />
+        <option value="$PROJECT_DIR$/static/option.css" />
+        <option value="$PROJECT_DIR$/relation.json" />
+        <option value="$PROJECT_DIR$/static/autocomplete.js" />
+        <option value="$PROJECT_DIR$/demo/model.py" />
+        <option value="$PROJECT_DIR$/static/autocomplete.css" />
+        <option value="$PROJECT_DIR$/common/Database.py" />
+        <option value="$PROJECT_DIR$/template/test.html" />
+        <option value="$PROJECT_DIR$/template/index1.html" />
+        <option value="$PROJECT_DIR$/demo/MyMiddleware.py" />
+        <option value="$PROJECT_DIR$/data/all_data.json" />
+        <option value="$PROJECT_DIR$/709vue/vue.config.js" />
+        <option value="$PROJECT_DIR$/demo/settings.py" />
+        <option value="$PROJECT_DIR$/user/urls.py" />
+        <option value="$PROJECT_DIR$/user/views.py" />
+        <option value="$PROJECT_DIR$/common/test.py" />
+        <option value="$PROJECT_DIR$/user/models.py" />
+        <option value="$PROJECT_DIR$/demo/test.py" />
+        <option value="$PROJECT_DIR$/common/operatefile.py" />
+        <option value="$PROJECT_DIR$/demo/views.py" />
+        <option value="$PROJECT_DIR$/demo/urls.py" />
+        <option value="$PROJECT_DIR$/navigation/urls.py" />
+        <option value="$PROJECT_DIR$/manage/urls.py" />
+        <option value="$PROJECT_DIR$/navigation/views.py" />
+        <option value="$PROJECT_DIR$/template/register.html" />
+        <option value="$PROJECT_DIR$/template/login.html" />
+        <option value="$PROJECT_DIR$/manage/views.py" />
+        <option value="$PROJECT_DIR$/navigation/models.py" />
+        <option value="$PROJECT_DIR$/manage/models.py" />
+        <option value="$PROJECT_DIR$/user/tests.py" />
+        <option value="$PROJECT_DIR$/common/database.py" />
+        <option value="$PROJECT_DIR$/requirement.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="597" />
+    <option name="y" value="145" />
+    <option name="width" value="1555" />
+    <option name="height" value="975" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ICE实验室\demo\data" />
+      <recent name="D:\ICE实验室\demo" />
+      <recent name="D:\ICE实验室\demo\static\img" />
+      <recent name="D:\ICE实验室\demo\static" />
+      <recent name="D:\ICE实验室\demo\template" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.tests">
+    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/navigation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/navigation/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/user" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/user/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/navigation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/navigation/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo" type="Python.DjangoServer" factoryName="Django server">
+      <module name="demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="demo.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tests" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.models" />
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.database" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fe59ced-f8b9-4cdf-8c09-b0c8b4f088da" name="Default Changelist" comment="" />
+      <created>1596331911161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596331911161</updated>
+      <workItem from="1596331912757" duration="10646000" />
+      <workItem from="1596368502471" duration="8566000" />
+      <workItem from="1596546648239" duration="4255000" />
+      <workItem from="1597063721570" duration="244000" />
+      <workItem from="1597486004917" duration="4590000" />
+      <workItem from="1597552401743" duration="629000" />
+      <workItem from="1597754661862" duration="1293000" />
+      <workItem from="1601701052625" duration="3493000" />
+      <workItem from="1601863009655" duration="19902000" />
+      <workItem from="1601967665175" duration="10638000" />
+      <workItem from="1602035704220" duration="11947000" />
+      <workItem from="1602059207317" duration="78000" />
+      <workItem from="1602471582484" duration="819000" />
+      <workItem from="1602575978348" duration="2033000" />
+      <workItem from="1602666711235" duration="1760000" />
+      <workItem from="1602730663140" duration="17345000" />
+      <workItem from="1602988340327" duration="11401000" />
+      <workItem from="1603072840734" duration="19750000" />
+      <workItem from="1603175951378" duration="8961000" />
+      <workItem from="1603246420791" duration="12285000" />
+      <workItem from="1603332897595" duration="7117000" />
+      <workItem from="1603414594080" duration="10630000" />
+      <workItem from="1603503360138" duration="8090000" />
+      <workItem from="1603525685563" duration="14544000" />
+      <workItem from="1603780255888" duration="27495000" />
+      <workItem from="1603936638146" duration="6060000" />
+      <workItem from="1603983446513" duration="225000" />
+      <workItem from="1603983712987" duration="3051000" />
+      <workItem from="1604017717720" duration="2970000" />
+      <workItem from="1604197214374" duration="1155000" />
+      <workItem from="1604226718440" duration="4089000" />
+      <workItem from="1604284671003" duration="14322000" />
+      <workItem from="1604538181272" duration="4208000" />
+      <workItem from="1604625684198" duration="5556000" />
+      <workItem from="1604887326109" duration="11318000" />
+      <workItem from="1604925234443" duration="236000" />
+      <workItem from="1604991619275" duration="3783000" />
+      <workItem from="1605062630837" duration="7164000" />
+      <workItem from="1605147878324" duration="3026000" />
+      <workItem from="1605231739535" duration="6748000" />
+      <workItem from="1605317337295" duration="975000" />
+      <workItem from="1605497058598" duration="1289000" />
+      <workItem from="1605597203384" duration="4323000" />
+      <workItem from="1605683110253" duration="247000" />
+      <workItem from="1605751321539" duration="1237000" />
+      <workItem from="1605856203640" duration="1261000" />
+      <workItem from="1606100212953" duration="1554000" />
+      <workItem from="1606474961790" duration="1023000" />
+      <workItem from="1606960709096" duration="14332000" />
+      <workItem from="1607042755444" duration="14073000" />
+      <workItem from="1607129322005" duration="6122000" />
+      <workItem from="1607220154601" duration="34768000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="373626000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16152816" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.29886687" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38526914" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.39943343" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.26203966" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32956153" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.vue" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/common/database.py</url>
+          <line>106</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/demo/test.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/709vue/src/static/data/entity_file.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/components/Home/AppMain.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-769" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2530">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/assets/js/chunk-common.32598334.js" />
+    <entry file="file://$PROJECT_DIR$/dist/static/js/index.f8d94c45.js" />
+    <entry file="file://$PROJECT_DIR$/dist/static/css/chunk-common.07d327e2.css" />
+    <entry file="file://$PROJECT_DIR$/709vue/src/components/Login/Register.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/components/Search/SearchRelation.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/components/Home/Slider.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3124">
+          <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/components/Home/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-521">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/store/modules/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/components/OverView/OverView.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="123" column="32" lean-forward="true" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/components/Manager/RelationManual.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="107" column="17" lean-forward="true" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="178" column="33" lean-forward="true" selection-start-line="178" selection-start-column="33" selection-end-line="178" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/components/Search/TableShow.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/components/Search/Search.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="124" column="23" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/709vue/src/components/Login/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/operatefile.py" />
+    <entry file="file://$PROJECT_DIR$/common/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/knowledgegraph.json">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="249">
+          <caret line="2441" column="62" selection-start-line="2441" selection-start-column="62" selection-end-line="2441" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/tmp/1607311066.5112956file.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="99" column="17" selection-start-line="99" selection-start-column="17" selection-end-line="105" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/lenovo/f/python/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="844" selection-start-line="844" selection-end-line="844" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding>
+            <element signature="e#628#660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="64" column="61" lean-forward="true" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.sql">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirement.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="127" column="17" lean-forward="true" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
