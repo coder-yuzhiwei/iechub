@@ -1,4 +1,4 @@
-![](https://github.com/coder-yuzhiwei/iechub/blob/main/source/banner)
+![](https://github.com/coder-yuzhiwei/iechub/blob/main/source/banner.jpg)
 
 ## IEC实验室自然语言处理学习大纲
 
