@@ -10,12 +10,14 @@
 #### 入门
 
 1. 【课程】[李沐 动手学深度学习](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497) 斯坦福公开课，由李沐老师中文讲述，从基础数学讲起，视频以及代码资料齐全，系统。
-2. 【课程】[李宏毅 2021/2022春机器学习课程](https://www.bilibili.com/video/BV1Wv411h7kN?p=1)
-3. 【课程】[斯坦福CS224N (2021|中英) 深度自然语言处理](https://www.bilibili.com/video/BV18Y411p79k/?spm_id_from=333.788.recommend_more_video.0)
-4. 【在线教程】[零基础实践深度学习](https://www.paddlepaddle.org.cn/tutorials/projectdetail/3465990) 百度在线教程，代码资料都在线运行，不必安装环境，从简单到复杂写代码实践深度学习，采用百度自研的paddlepaddle深度学习框架。
-5. 【书籍】[邱锡鹏 神经网络与深度学习](https://nndl.github.io/nndl-book.pdf) 复旦大学，全面介绍深度学习，配套资源均在Github，也有[课程视频](https://www.bilibili.com/video/BV13b4y1177W?spm_id_from=333.999.0.0)
-6. 【书籍】[从零构建知识图谱：技术、方法与案例](https://weread.qq.com/web/reader/3b332a007260a5613b3feb6)
-7. 【仓库】[东南大学《知识图谱》研究生课程](https://github.com/npubird/KnowledgeGraphCourse)
+2. 【课程】[吴恩达机器学习系列课程](https://www.bilibili.com/video/BV164411b7dx?share_source=copy_web)
+3. 【课程】[吴恩达深度学习系列课程](https://www.bilibili.com/video/BV1FT4y1E74V?share_source=copy_web)
+4. 【课程】[李宏毅 2021/2022春机器学习课程](https://www.bilibili.com/video/BV1Wv411h7kN?p=1)
+5. 【课程】[斯坦福CS224N (2021|中英) 深度自然语言处理](https://www.bilibili.com/video/BV18Y411p79k/?spm_id_from=333.788.recommend_more_video.0)
+6. 【在线教程】[零基础实践深度学习](https://www.paddlepaddle.org.cn/tutorials/projectdetail/3465990) 百度在线教程，代码资料都在线运行，不必安装环境，从简单到复杂写代码实践深度学习，采用百度自研的paddlepaddle深度学习框架。
+7. 【书籍】[邱锡鹏 神经网络与深度学习](https://nndl.github.io/nndl-book.pdf) 复旦大学，全面介绍深度学习，配套资源均在Github，也有[课程视频](https://www.bilibili.com/video/BV13b4y1177W?spm_id_from=333.999.0.0)
+8. 【书籍】[从零构建知识图谱：技术、方法与案例](https://weread.qq.com/web/reader/3b332a007260a5613b3feb6)
+9. 【仓库】[东南大学《知识图谱》研究生课程](https://github.com/npubird/KnowledgeGraphCourse)
 
 #### 中级
 
