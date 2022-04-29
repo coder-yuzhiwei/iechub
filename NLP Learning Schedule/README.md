@@ -1,15 +1,15 @@
 ![IEC](https://github.com/coder-yuzhiwei/iechub/blob/main/source/banner.jpg)
 
-# 测试
 
-## IEC实验室自然语言处理学习大纲
+
+# IEC实验室自然语言处理学习大纲
 
 本学习大纲为IEC实验室自然语言处理组的学习资料，学习时间为`5月1日-6月20日`，主要包括机器学习、自然语言处理、深度学习框架课程，NLP的实践任务以及最终的学习评测任务。
 
 ### 关于学习
 
 - 请大家在[飞书文档](https://docs.feishu.cn/docs)的IEC共享文件夹内建立自己的目录，更新自己的学习进度。
-- 【实践任务】需要在本大纲发布的[知识图谱构建](#测试)，[基于知识图谱的对话系统](#####QAsystem)和[文本纠错](##### 文本纠错)，或者[课程](####深度学习入门)中选择一项NLP任务进行实践，并将实践过程记录在飞书文档中。深度学习框架不限，推荐PyTorch或Paddle。
+- 【实践任务】需要在本大纲[实践任务](#NLP任务实践)发布的三个任务，或者[课程](#深度学习入门)中选择一项NLP任务进行实践，并将实践过程记录在飞书文档中。深度学习框架不限，推荐PyTorch或Paddle。
 - 【学习评测任务】需要参加学习评测任务，至少提交一次自己的结果。
 
 ### 关于学习评测
@@ -20,9 +20,7 @@
 - 提交后需要在飞书文档上更新自己的提交记录，说明本次提交做了哪些工作（如模型调参、数据增强等），最终实验室会根据提交记录和打榜成绩综合评价大家的学习成果。
 - 本次比赛赛题综合了多个抽取子任务，已公布的Seen Schema中6个抽取框架中，子任务难度各有不同，建议从“人生信息”和“影视情感”开始着手。
 
-
-
-### 深度学习工具
+# 深度学习工具
 
 #### PyTorch
 
@@ -31,11 +29,7 @@ PyTorch主要用于学术研究，易于上手，TensorFlow在工业落地方面
 1. 【文档】[PyTorch中文文档](https://pytorch-cn.readthedocs.io/zh/latest/)
 2. 【视频课程】[手动使用PyTorch实现简单的神经网络模型](https://space.bilibili.com/1413433465?spm_id_from=333.337.0.0)
 
-
-
-### 自然语言处理学习教程
-
-#### 深度学习入门
+# 深度学习入门
 
 1. 【视频课程】[李沐 动手学深度学习 PyTorch版](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497) 斯坦福公开课，由李沐老师中文讲述，从基础数学讲起，视频以及代码资料齐全，系统。
 2. 【视频课程】[李宏毅 2021/2022春机器学习课程](https://www.bilibili.com/video/BV1Wv411h7kN?p=1)
@@ -45,25 +39,23 @@ PyTorch主要用于学术研究，易于上手，TensorFlow在工业落地方面
 6. 【书籍】[从零构建知识图谱：技术、方法与案例](https://weread.qq.com/web/reader/3b332a007260a5613b3feb6)
 7. 【仓库】[东南大学《知识图谱》研究生课程](https://github.com/npubird/KnowledgeGraphCourse)
 
-#### NLP任务实践
+# NLP任务实践
 
 1. ##### 知识图谱的构建
 
-   见[知识图谱的构建](./Knowledge Graph)，由廖攀负责。
+   见[知识图谱的构建](https://github.com/hejieshi/iechub/tree/main/NLP%20Learning%20Schedule/Knowledge%20Graph)，由廖攀负责。
 
 2. ##### QAsystem
 
-   见[基于RASA的问答系统](./QA System)，由崔建民负责。
+   见[基于RASA的问答系统](https://github.com/hejieshi/iechub/tree/main/NLP%20Learning%20Schedule/QA%20System)，由崔建民负责。
 
 3. ##### 文本纠错
 
-   见[文本纠错](./Spell Error Correction)，由贺杰士负责。
+   见[文本纠错](https://github.com/hejieshi/iechub/tree/main/NLP%20Learning%20Schedule/Spell%20Error%20Correction)，由贺杰士负责。
 
    
 
-
-
-## 其他实用工具
+# 其他实用工具
 
 ### Anaconda
 
