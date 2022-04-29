@@ -29,6 +29,12 @@ PyTorch主要用于学术研究，易于上手，TensorFlow在工业落地方面
 1. 【文档】[PyTorch中文文档](https://pytorch-cn.readthedocs.io/zh/latest/)
 2. 【视频课程】[手动使用PyTorch实现简单的神经网络模型](https://space.bilibili.com/1413433465?spm_id_from=333.337.0.0)
 
+
+
+### Paddle
+
+Paddle与PyTorch语法基本一致，有详细的函数对照表，参见[PyTorch-PaddlePaddle API映射表](https://www.paddlepaddle.org.cn/documentation/docs/zh/guides/08_api_mapping/pytorch_api_mapping_cn.html)，模型迁移非常方便。
+
 # 深度学习入门
 
 视频教程，包含理论介绍与动手实践。
