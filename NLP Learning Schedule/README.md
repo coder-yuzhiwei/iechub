@@ -6,30 +6,38 @@
 
 本学习大纲为IEC实验室自然语言处理组的学习资料，学习时间为`5月1日-6月20日`，主要包括机器学习、自然语言处理、深度学习框架课程，NLP的实践任务以及最终的学习评测任务。
 
-### 关于学习
+## 关于学习
 
 - 请大家在[飞书文档](https://docs.feishu.cn/docs)的IEC共享文件夹内建立自己的目录，更新自己的学习进度。
 - 【实践任务】需要在本大纲[实践任务](#NLP任务实践)发布的三个任务，或者[课程](#深度学习入门)中选择一项NLP任务进行实践，并将实践过程记录在飞书文档中。深度学习框架不限，推荐PyTorch或Paddle。
 - 【学习评测任务】需要参加学习评测任务，至少提交一次自己的结果。
 
-### 关于学习评测
+## 关于学习评测
 
 学习评测在[CCKS2022通用信息抽取竞赛](https://aistudio.baidu.com/aistudio/competition/detail/161/0/introduction)上进行，实验室将在6月底对大家的学习成果进行评价，并对优秀者进行奖励。以下是评测说明：
 
-- 以个人为单位报名，验证数据已于4月25日发布，大家可以直接在比赛界面提交结果，**每天至多提交三次结果**。
+- 建议以个人为单位报名，验证数据已于4月25日发布，大家可以直接在比赛界面提交结果，**每天至多提交三次结果**。
 - 提交后需要在飞书文档上更新自己的提交记录，说明本次提交做了哪些工作（如模型调参、数据增强等），最终实验室会根据提交记录和打榜成绩综合评价大家的学习成果。
 - 本次比赛赛题综合了多个抽取子任务，已公布的Seen Schema中6个抽取框架中，子任务难度各有不同，建议从“人生信息”和“影视情感”开始着手。
 
 # 深度学习工具
 
-#### PyTorch
+### PyTorch
 
 PyTorch主要用于学术研究，易于上手，TensorFlow在工业落地方面更有修饰，建议大家使用PyTorch。
 
 1. 【文档】[PyTorch中文文档](https://pytorch-cn.readthedocs.io/zh/latest/)
 2. 【视频课程】[手动使用PyTorch实现简单的神经网络模型](https://space.bilibili.com/1413433465?spm_id_from=333.337.0.0)
 
+
+
+### Paddle
+
+Paddle与PyTorch语法基本一致，有详细的函数对照表，参见[PyTorch-PaddlePaddle API映射表](https://www.paddlepaddle.org.cn/documentation/docs/zh/guides/08_api_mapping/pytorch_api_mapping_cn.html)，模型迁移非常方便。
+
 # 深度学习入门
+
+视频教程，包含理论介绍与动手实践。
 
 1. 【视频课程】[李沐 动手学深度学习 PyTorch版](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497) 斯坦福公开课，由李沐老师中文讲述，从基础数学讲起，视频以及代码资料齐全，系统。
 2. 【视频课程】[李宏毅 2021/2022春机器学习课程](https://www.bilibili.com/video/BV1Wv411h7kN?p=1)
@@ -40,6 +48,8 @@ PyTorch主要用于学术研究，易于上手，TensorFlow在工业落地方面
 7. 【仓库】[东南大学《知识图谱》研究生课程](https://github.com/npubird/KnowledgeGraphCourse)
 
 # NLP任务实践
+
+实验室师兄完成的项目demo，含代码。
 
 1. ##### 知识图谱的构建
 
