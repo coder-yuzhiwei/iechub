@@ -1,0 +1,87 @@
+forms:
+  jobsearch_form:
+    address:
+      - type: from_entity
+        entity: address
+    job:
+      - type: from_entity
+        entity: job
+        not_intent: jobask
+    salary:
+      - type: from_entity
+        entity: salary
+    welfare:
+      - type: from_entity
+        entity: welfare
+    company:
+      - type: from_entity
+        entity: company
+
+  companyask_form:
+    address:
+      - type: from_entity
+        entity: address
+    job:
+      - type: from_entity
+        entity: job
+    salary:
+      - type: from_entity
+        entity: salary
+    welfare:
+      - type: from_entity
+        entity: welfare
+
+  welfareask_form:
+    job:
+      - type: from_entity
+        entity: job
+    company:
+      - type: from_entity
+        entity: company
+  welfareyorn_form:
+    job:
+      - type: from_entity
+        entity: job
+    company:
+      - type: from_entity
+        entity: company
+    welfare:
+      - type: from_entity
+        entity: welfare
+
+  salaryask_form:
+    job:
+      - type: from_entity
+        entity: job
+    company:
+      - type: from_entity
+        entity: company
+  addressask_form:
+    job:
+      - type: from_entity
+        entity: job
+    company:
+      - type: from_entity
+        entity: company
+    salary:
+      - type: from_entity
+        entity: salary
+    welfare:
+      - type: from_entity
+        entity: welfare
+  jobrequirement_form:
+    job:
+      - type: from_entity
+        entity: job
+    company:
+      - type: from_entity
+        entity: company
+    salary:
+      - type: from_entity
+        entity: salary
+    welfare:
+      - type: from_entity
+        entity: welfare
+    address:
+      - type: from_entity
+        entity: address

@@ -1,14 +1,22 @@
 ![](https://github.com/coder-yuzhiwei/iechub/blob/main/source/banner.jpg)
 
-## IEC实验室自然语言处理学习大纲
+## 问答系统学习
+### 相关学习资料
+问答系统涉及的自然语言处理技术很多，包括分词与词性标注、命名实体识别、意图识别、文本摘要、文本分类、文本聚类、语言浅层分析、问句与答案匹配及排序等，下面分享一些学习材料
+贪心学院nlp(https://www.bilibili.com/video/BV1yK4y1E7n4?spm_id_from=333.337.search-card.all.click)
+问答系统综论(https://zhuanlan.zhihu.com/p/88224637)
+FAQ问答系统(https://zhuanlan.zhihu.com/p/265200244)
+基于知识图谱的问答系统(https://github.com/YeYzheng/KGQA-Based-On-medicine)
+任务型对话系统研究综述(https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2020&filename=JSJX202010004&uniplatform=NZKPT&v=0vtp9fKPMXG5D_BX1r2pyk-ZIsUta-_e0ykCPtcmesTgRRhL2OOxzZpgBQfFRNJE)
 
-本学习大纲为IEC实验室自然语言处理组的学习资料，学习时间为`5月1日-6月20日`，主要包括机器学习、自然语言处理、深度学习框架课程，三个NLP任务的实践任务以及最终的关系抽取任务评测。请大家在[飞书文档](https://docs.feishu.cn/docs)的IEC共享文件夹内建立自己的目录，更新自己的学习进度。
 
-### 关于最终的学习评测
-
-学习评测在[CCKS2022通用信息抽取竞赛](https://aistudio.baidu.com/aistudio/competition/detail/161/0/introduction)上进行，实验室将在6月底对大家的学习成果进行评价，并对优秀者进行奖励。以下是评测说明：
-
-- 以个人为单位报名，验证数据已于4月25日发布，大家可以直接在比赛界面提交结果，**每天至多提交三次结果**。
-- 提交后需要在飞书文档上更新自己的提交记录，说明本次提交做了哪些工作（如模型调参、数据增强等），最终实验室会根据提交记录和打榜成绩综合评价大家的学习成果。
-- 本次比赛赛题综合了多个抽取子任务，已公布的Seen Schema中6个抽取框架中，子任务难度各有不同，建议从“人生信息”和“影视情感”开始着手。
+### 基于Rasa的语音招聘问答系统项目
+#### 相关学习材料
+Rasa聊天机器人开发指南系列(https://jiangdg.blog.csdn.net/article/details/104328946)
+Rasa官方开发文档(https://rasa.com/docs/rasa/)
+#### 项目搭建
+问答系统代码和相关部署文档已经上传，其中project_job_bot为Rasa问答系统文件，可以单独部署训练查看结果
+问答系统的训练可以参考相关学习材料，要求问答系统能够自主搭建并训练
+需要将中文词向量模型total_word_feature_extractor_zh.dat拷贝到创建的python项目data目录下(可任意位置)，后面训练NLU模型时用到
+链接：https://pan.baidu.com/s/1kNENvlHLYWZIddmtWJ7Pdg 密码：p4vx
 
