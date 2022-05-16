@@ -1,0 +1,17 @@
+{
+  "priority": 6,
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"subscribe\"}}]": "newsletter_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"subscribe\"}}, {\"active_loop\": {\"name\": \"newsletter_form\"}, \"prev_action\": {\"action_name\": \"newsletter_form\"}, \"user\": {\"intent\": \"subscribe\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"newsletter_form\"}}]": "utter_subscribed",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"newsletter_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_subscribed\"}}]": "action_listen"
+    },
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"newsletter_form\"}, \"prev_action\": {\"action_name\": \"newsletter_form\"}, \"user\": {\"intent\": \"subscribe\"}}]": "do_not_predict_loop_action"
+    }
+  },
+  "core_fallback_threshold": 0.3,
+  "core_fallback_action_name": "action_default_fallback",
+  "enable_fallback_prediction": true
+}

@@ -1,0 +1,214 @@
+version: '2.0'
+
+intents:
+  - affirm
+  - deny
+  - greet
+  - goodbye
+  - thanks
+  - whoareyou
+  - whattodo
+  - inform
+  - inform_business
+  - stop
+  - chitchat
+  - request_job
+  - jobask
+  - restart
+  - ask_company
+  - ask_welfare
+  - ask_welfare_yorn
+  - ask_salary
+  - ask_address
+  - ask_jobrequirement
+
+session_config:
+  carry_over_slots_to_new_session: false
+  session_expiration_time: 1
+
+slots:
+  address:
+    type: unfeaturized
+    auto_fill: false
+  company:
+    type: unfeaturized
+    auto_fill: false
+  job:
+    type: unfeaturized
+    auto_fill: false
+  welfare:
+    type: unfeaturized
+    auto_fill: false
+  salary:
+    type: unfeaturized
+    auto_fill: false
+
+entities:
+  - address
+  - company
+  - job
+  - welfare
+  - salary
+
+actions:
+  - utter_answer_affirm
+  - utter_answer_deny
+  - utter_answer_greet
+  - utter_answer_goodbye
+  - utter_answer_thanks
+  - utter_answer_whoareyou
+  - utter_answer_whattodo
+  - action_default_fallback
+  - validate_weather_form
+  - utter_answer_jobask
+  - utter_ask_continue
+  - validate_jobsearch_form
+  - validate_companyask_form
+  - validate_welfareask_form
+  - validate_welfareyorn_form
+  - validate_salaryask_form
+  - validate_addressask_form
+  - validate_jobrequirement_form
+
+forms:
+  jobsearch_form:
+    address:
+      - type: from_entity
+        entity: address
+    job:
+      - type: from_entity
+        entity: job
+        not_intent: jobask
+    salary:
+      - type: from_entity
+        entity: salary
+    welfare:
+      - type: from_entity
+        entity: welfare
+    company:
+      - type: from_entity
+        entity: company
+
+  companyask_form:
+    address:
+      - type: from_entity
+        entity: address
+    job:
+      - type: from_entity
+        entity: job
+    salary:
+      - type: from_entity
+        entity: salary
+    welfare:
+      - type: from_entity
+        entity: welfare
+
+  welfareask_form:
+    job:
+      - type: from_entity
+        entity: job
+    company:
+      - type: from_entity
+        entity: company
+  welfareyorn_form:
+    job:
+      - type: from_entity
+        entity: job
+    company:
+      - type: from_entity
+        entity: company
+    welfare:
+      - type: from_entity
+        entity: welfare
+
+  salaryask_form:
+    job:
+      - type: from_entity
+        entity: job
+    company:
+      - type: from_entity
+        entity: company
+  addressask_form:
+    job:
+      - type: from_entity
+        entity: job
+    company:
+      - type: from_entity
+        entity: company
+    salary:
+      - type: from_entity
+        entity: salary
+    welfare:
+      - type: from_entity
+        entity: welfare
+  jobrequirement_form:
+    job:
+      - type: from_entity
+        entity: job
+    company:
+      - type: from_entity
+        entity: company
+    salary:
+      - type: from_entity
+        entity: salary
+    welfare:
+      - type: from_entity
+        entity: welfare
+    address:
+      - type: from_entity
+        entity: address
+responses:
+  utter_answer_affirm:
+    - text: "嗯嗯，好的！"
+    - text: "嗯嗯，很开心能够帮您解决问题~"
+    - text: "嗯嗯，还需要什么我能够帮助您的呢？"
+
+  utter_answer_greet:
+    - text: "您好！请问我可以帮到您吗？"
+    - text: "您好！很高兴为您服务。请说出您要查询的功能？"
+
+  utter_answer_goodbye:
+    - text: "再见"
+    - text: "拜拜"
+    - text: "虽然我有万般舍不得，但是天下没有不散的宴席~祝您安好！"
+    - text: "期待下次再见！"
+    - text: "嗯嗯，下次需要时随时记得我哟~"
+    - text: "see you!"
+
+  utter_answer_deny:
+    - text: "主人，您不开心吗？不要离开我哦"
+    - text: "怎么了，主人？"
+
+  utter_answer_thanks:
+    - text: "嗯呢。不用客气~"
+    - text: "这是我应该做的，主人~"
+    - text: "嗯嗯，合作愉快！"
+
+  utter_answer_whoareyou:
+    - text: "您好！我是小露呀，您的AI智能助理"
+
+  utter_answer_whattodo:
+    - text: "您好！很高兴为您服务，我目前只支持查询工作哦。"
+
+  utter_ask_continue:
+    - text: "请问您还要继续吗?"
+
+  utter_noworries:
+    - text: "不用客气 :)"
+    - text: "没事啦"
+    - text: "不客气哈，都是老朋友了 :)"
+
+  utter_wrong_business:
+    - text: "当前还不支持{business}业务，请重新输入。"
+
+  utter_wrong_type:
+    - text: "当前还不支持查询{type}。"
+
+  utter_wrong_number:
+    - text: "您输入的{number}有误，请重新输入。"
+
+  utter_answer_jobask:
+    - text: "你想找什么样的工作"
+
+  utter_restart:
+    - text: "你现在可以重新发问了"

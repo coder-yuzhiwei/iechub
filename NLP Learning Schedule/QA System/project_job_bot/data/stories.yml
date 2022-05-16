@@ -1,0 +1,467 @@
+stories:
+- story: affirm and with greet
+  steps:
+   - intent: greet
+   - action: utter_answer_greet
+   - intent: affirm
+   - action: utter_answer_affirm
+
+- story: job_ask
+  steps:
+   - intent: jobask
+   - action: utter_answer_jobask
+
+- story: affirm
+  steps:
+   - intent: affirm
+   - action: utter_answer_affirm
+
+- story: no with greet
+  steps:
+   - intent: greet
+   - action: utter_answer_greet
+   - intent: deny
+   - action: utter_answer_deny
+
+- story: goodbye
+  steps:
+   - intent: goodbye
+   - action: utter_answer_goodbye
+
+- story: chitchart
+  steps:
+   - intent: chitchat
+   - action: action_default_fallback
+
+- story: thanks with greet
+  steps:
+   - intent: greet
+   - action: utter_answer_greet
+   - intent: thanks
+   - action: utter_answer_thanks
+
+- story: thanks
+  steps:
+  - intent: thanks
+  - action: utter_answer_thanks
+
+- story: who are you with greet
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: whoareyou
+  - action: utter_answer_whoareyou
+
+- story: who are you
+  steps:
+  - intent: whoareyou
+  - action: utter_answer_whoareyou
+
+- story: who to do
+  steps:
+  - intent: whattodo
+  - action: utter_answer_whattodo
+
+
+- story: happy path
+  steps:
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - active_loop: null
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: unhappy path
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: jobsearch_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: stop but continue path
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: jobsearch_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: stop and really stop path
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_deactivate_loop
+  - active_loop: null
+
+- story: chitchat stop but continue path
+  steps:
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: jobsearch_form
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: jobsearch_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: stop but continue and chitchat path
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: jobsearch_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: jobsearch_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: chitchat stop but continue and chitchat path
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: jobsearch_form
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: jobsearch_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: jobsearch_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: chitchat, stop and really stop path
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: jobsearch_form
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_deactivate_loop
+  - active_loop: null
+
+- story: 找工作 + 工作 + 公司  + 薪资 + 薪资
+  steps:
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - slot_was_set:
+    - requested_slot: job
+  - slot_was_set:
+    - job: 软件工程师
+  - slot_was_set:
+    - requested_slot: company
+  - slot_was_set:
+    - company: 广州市帅邦物流有限公司
+  - slot_was_set:
+      - requested_slot: salary
+  - slot_was_set:
+      - salary: 5000以上
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - or:
+    - intent: inform
+      entities:
+      - salary: 6000以上
+    - intent: request_job
+      entities:
+      - salary: 6000以上
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - slot_was_set:
+    - job: 软件工程师
+  - slot_was_set:
+    - address: 广州市帅邦物流有限公司
+  - slot_was_set:
+    - salary: 6000以上
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - intent: thanks
+  - action: utter_answer_thanks
+
+- story: clear_all_slot
+  steps:
+  - intent: restart
+  - action: action_restart
+
+- story: happy path companyask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_company
+  - action: companyask_form
+  - active_loop: companyask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: happy path welfareask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_welfare
+  - action: welfareask_form
+  - active_loop: welfareask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: happy path welfareyorn
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_welfare_yorn
+  - action: welfareyorn_form
+  - active_loop: welfareyorn_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: happy path salaryask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_salary
+  - action: salaryask_form
+  - active_loop: salaryask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+
+- story: happy path addressask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_address
+  - action: addressask_form
+  - active_loop: addressask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: happy path jobrequirement
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_jobrequirement
+  - action: jobrequirement_form
+  - active_loop: jobrequirement_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: unhappy path companyask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_company
+  - action: companyask_form
+  - active_loop: companyask_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: companyask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: unhappy path welfareask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_welfare
+  - action: welfareask_form
+  - active_loop: welfareask_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: welfareask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: unhappy path welfareyorn
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_welfare_yorn
+  - action: welfareyorn_form
+  - active_loop: welfareyorn_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: welfareyorn_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: unhappy path salaryask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_salary
+  - action: salaryask_form
+  - active_loop: salaryask_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: salaryask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: unhappy path addressask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_address
+  - action: addressask_form
+  - active_loop: addressask_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: addressask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: unhappy path jobrequirement
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: ask_jobrequirement
+  - action: jobrequirement_form
+  - active_loop: jobrequirement_form
+  - intent: chitchat
+  - action: action_default_fallback
+  - action: jobrequirement_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: jobsearch and welfareask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - active_loop: null
+  - intent: ask_welfare
+  - action: welfareask_form
+  - active_loop: welfareask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: jobsearch and welfareyornask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - active_loop: null
+  - intent: ask_welfare_yorn
+  - action: welfareyorn_form
+  - active_loop: welfareyorn_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: jobsearch and salaryask
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - active_loop: null
+  - intent: ask_salary
+  - action: salaryask_form
+  - active_loop: salaryask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: jobsearch and addresssk
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - active_loop: null
+  - intent: ask_address
+  - action: addressask_form
+  - active_loop: addressask_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
+
+- story: jobsearch and jobrequirement
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+  - active_loop: null
+  - intent: ask_jobrequirement
+  - action: jobrequirement_form
+  - active_loop: jobrequirement_form
+  - active_loop: null
+  - intent: thanks
+  - action: utter_noworries
