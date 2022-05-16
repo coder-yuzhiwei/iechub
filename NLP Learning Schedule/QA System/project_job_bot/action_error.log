@@ -1,0 +1,42 @@
+nohup: ignoring input
+2021-01-12 16:54:29.441743: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-01-12 16:55:37.912672: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-01-12 16:55:38.019266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.024176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0000:05:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.026223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0000:08:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.030401: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0000:09:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.032503: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.034044: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0000:85:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.035751: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 6 with properties: 
+pciBusID: 0000:88:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.037318: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 7 with properties: 
+pciBusID: 0000:89:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.037430: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-01-12 16:55:38.139264: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-01-12 16:55:38.405691: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-01-12 16:55:38.454264: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-01-12 16:55:38.702814: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-01-12 16:55:38.724393: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-01-12 16:55:38.753926: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-01-12 16:55:38.808028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-01-12 16:55:39 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2021-01-12 16:55:40 INFO     rasa_sdk.executor  - Registered function for 'action_default_fallback'.
+2021-01-12 16:55:40 INFO     rasa_sdk.executor  - Registered function for 'action_session_start'.
+2021-01-12 16:55:40 INFO     rasa_sdk.executor  - Registered function for 'number_form'.
+2021-01-12 16:55:40 INFO     rasa_sdk.executor  - Registered function for 'validate_jobsearch_form'.
+2021-01-12 16:55:40 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http://localhost:20071
+2021-01-12 16:55:40 DEBUG    rasa_sdk.utils  - Using the default number of Sanic workers (1).

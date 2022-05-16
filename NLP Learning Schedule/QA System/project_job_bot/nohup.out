@@ -1,0 +1,26 @@
+2021-01-12 15:43:03.215468: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+usage: rasa [-h] [--version]
+            {init,run,shell,train,interactive,telemetry,test,visualize,data,export,x}
+            ...
+rasa: error: unrecognized arguments: rasa.log
+2021-01-12 15:43:46.123588: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+usage: rasa [-h] [--version]
+            {init,run,shell,train,interactive,telemetry,test,visualize,data,export,x}
+            ...
+rasa: error: unrecognized arguments: rasa.log
+2021-01-12 15:44:49.585573: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+usage: rasa [-h] [--version]
+            {init,run,shell,train,interactive,telemetry,test,visualize,data,export,x}
+            ...
+rasa: error: unrecognized arguments: rasa.log
+2021-01-12 15:46:13.459170: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+usage: rasa [-h] [--version]
+            {init,run,shell,train,interactive,telemetry,test,visualize,data,export,x}
+            ...
+rasa: error: unrecognized arguments: rasa1.log
+##### webIp=222.20.95.238, webPort=5000
+ * Serving Flask app "server" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on

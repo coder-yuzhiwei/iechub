@@ -1,0 +1,268 @@
+nohup: ignoring input
+2021-01-12 16:54:29.441743: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-01-12 16:55:37.913425: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-01-12 16:55:38.021074: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.024558: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0000:05:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.026552: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0000:08:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.030638: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0000:09:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.032708: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.034442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0000:85:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.036116: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 6 with properties: 
+pciBusID: 0000:88:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.037625: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 7 with properties: 
+pciBusID: 0000:89:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:55:38.037709: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-01-12 16:55:38.139264: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-01-12 16:55:38.405691: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-01-12 16:55:38.454263: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-01-12 16:55:38.702743: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-01-12 16:55:38.724842: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-01-12 16:55:38.754526: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-01-12 16:55:38.812465: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-01-12 16:55:38 INFO     rasa.model  - Loading model models/20210112-120523.tar.gz...
+2021-01-12 16:55:39 DEBUG    rasa.model  - Extracted model to '/tmp/tmp9pzr5kln'.
+2021-01-12 16:55:39 DEBUG    sanic.root  - CORS: Configuring CORS with resources: {'/*': {'origins': [''], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': 'filename', 'supports_credentials': True, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': {'/*': {'origins': ''}}, 'intercept_exceptions': True, 'always_send': True}}
+2021-01-12 16:55:39 DEBUG    rasa.core.utils  - Available web server routes: 
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/                                                  GET                            hello
+2021-01-12 16:55:39 INFO     root  - Starting Rasa server on http://localhost:20070
+2021-01-12 16:55:39 DEBUG    rasa.core.utils  - Using the default number of Sanic workers (1).
+2021-01-12 16:55:39 INFO     rasa.model  - Loading model models/20210112-120523.tar.gz...
+2021-01-12 16:55:40 DEBUG    rasa.model  - Extracted model to '/tmp/tmpgm7l28m1'.
+2021-01-12 16:55:40 DEBUG    urllib3.connectionpool  - Starting new HTTPS connection (1): api.segment.io:443
+2021-01-12 16:55:42 DEBUG    urllib3.connectionpool  - https://api.segment.io:443 "POST /v1/track HTTP/1.1" 200 21
+2021-01-12 16:55:42 INFO     root  - Enabling coroutine debugging. Loop id 94494734554848.
+2021-01-12 16:55:42 INFO     rasa.model  - Loading model models/20210112-120523.tar.gz...
+2021-01-12 16:55:43 DEBUG    rasa.model  - Extracted model to '/tmp/tmp0eentp38'.
+2021-01-12 16:55:53 INFO     rasa.nlu.components  - Added 'MitieNLP' to component cache. Key 'MitieNLP-/home/lfx/job_search_qa/project_job_bot/data/total_word_feature_extractor_zh.dat'.
+2021-01-12 16:55:55 DEBUG    rasa.core.tracker_store  - Connected to InMemoryTrackerStore.
+2021-01-12 16:55:55 DEBUG    rasa.core.lock_store  - Connected to lock store 'InMemoryLockStore'.
+2021-01-12 16:55:58 DEBUG    rasa.model  - Extracted model to '/tmp/tmpi4d4n29i'.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/core/slots.py:262: FutureWarning: UnfeaturizedSlot is deprecated and will be removed in Rasa Open Source 3.0. Please change the type and configure the 'influence_conversation' flag for slot 'address' instead.
+  rasa.shared.utils.io.raise_warning(
+[0m[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/core/slots.py:262: FutureWarning: UnfeaturizedSlot is deprecated and will be removed in Rasa Open Source 3.0. Please change the type and configure the 'influence_conversation' flag for slot 'company' instead.
+  rasa.shared.utils.io.raise_warning(
+[0m[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/core/slots.py:262: FutureWarning: UnfeaturizedSlot is deprecated and will be removed in Rasa Open Source 3.0. Please change the type and configure the 'influence_conversation' flag for slot 'job' instead.
+  rasa.shared.utils.io.raise_warning(
+[0m[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/core/slots.py:262: FutureWarning: UnfeaturizedSlot is deprecated and will be removed in Rasa Open Source 3.0. Please change the type and configure the 'influence_conversation' flag for slot 'welfare' instead.
+  rasa.shared.utils.io.raise_warning(
+[0m[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/core/slots.py:262: FutureWarning: UnfeaturizedSlot is deprecated and will be removed in Rasa Open Source 3.0. Please change the type and configure the 'influence_conversation' flag for slot 'salary' instead.
+  rasa.shared.utils.io.raise_warning(
+[0m2021-01-12 16:55:58 DEBUG    rasa.utils.tensorflow.models  - Loading the model from /tmp/tmpi4d4n29i/core/policy_2_TEDPolicy/ted_policy.tf_model with finetune_mode=False...
+2021-01-12 16:55:58.920153: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-01-12 16:55:59.092384: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2099840000 Hz
+2021-01-12 16:55:59.094901: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f153d6a470 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-01-12 16:55:59.094934: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-01-12 16:56:01.444532: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f144c1f200 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-01-12 16:56:01.444617: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
+2021-01-12 16:56:01.444629: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce GTX 1080 Ti, Compute Capability 6.1
+2021-01-12 16:56:01.444637: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): GeForce GTX 1080 Ti, Compute Capability 6.1
+2021-01-12 16:56:01.444650: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): GeForce GTX 1080 Ti, Compute Capability 6.1
+2021-01-12 16:56:01.444659: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (4): GeForce GTX 1080 Ti, Compute Capability 6.1
+2021-01-12 16:56:01.444668: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (5): GeForce GTX 1080 Ti, Compute Capability 6.1
+2021-01-12 16:56:01.444676: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (6): GeForce GTX 1080 Ti, Compute Capability 6.1
+2021-01-12 16:56:01.444685: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (7): GeForce GTX 1080 Ti, Compute Capability 6.1
+2021-01-12 16:56:01.470612: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:56:01.477464: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0000:05:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:56:01.478978: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0000:08:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:56:01.480064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0000:09:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:56:01.481180: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0000:84:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:56:01.482917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0000:85:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:56:01.484500: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 6 with properties: 
+pciBusID: 0000:88:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:56:01.486033: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 7 with properties: 
+pciBusID: 0000:89:00.0 name: GeForce GTX 1080 Ti computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 28 deviceMemorySize: 10.92GiB deviceMemoryBandwidth: 451.17GiB/s
+2021-01-12 16:56:01.486180: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-01-12 16:56:01.486274: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-01-12 16:56:01.486310: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-01-12 16:56:01.486336: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-01-12 16:56:01.486362: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-01-12 16:56:01.486388: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-01-12 16:56:01.486414: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-01-12 16:56:01.518840: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-01-12 16:56:01.518970: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-01-12 16:56:14 ERROR    rasa.core.agent  - Could not load model due to CUDA runtime implicit initialization on GPU:5 failed. Status: out of memory.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: The model at 'models' could not be loaded. Error: <class 'tensorflow.python.framework.errors_impl.InternalError'>: CUDA runtime implicit initialization on GPU:5 failed. Status: out of memory
+[0m[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: Agent could not be loaded with the provided configuration. Load default agent without any model.
+[0m2021-01-12 16:56:14 DEBUG    rasa.core.nlg.generator  - Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2021-01-12 16:56:14 INFO     root  - Rasa server is up and running.
+2021-01-12 17:35:14 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-12 17:35:14 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-12 17:35:14 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-12 17:35:14 DEBUG    rasa.core.tracker_store  - Could not find tracker for conversation ID 'default'.
+2021-01-12 17:35:14 DEBUG    rasa.core.processor  - Starting a new session for conversation ID 'default'.
+2021-01-12 17:35:14 DEBUG    rasa.core.processor  - Policy prediction ended with events '[]'.
+2021-01-12 17:35:14 DEBUG    rasa.core.processor  - Action 'action_session_start' ended with events '[<rasa.shared.core.events.SessionStarted object at 0x7f1aacb84700>, ActionExecuted(action: action_listen, policy: None, confidence: None)]'.
+Building prefix dict from the default dictionary ...
+2021-01-12 17:35:14 DEBUG    jieba  - Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+2021-01-12 17:35:14 DEBUG    jieba  - Loading model from cache /tmp/jieba.cache
+Loading model cost 1.634 seconds.
+2021-01-12 17:35:15 DEBUG    jieba  - Loading model cost 1.634 seconds.
+Prefix dict has been built successfully.
+2021-01-12 17:35:15 DEBUG    jieba  - Prefix dict has been built successfully.
+2021-01-12 17:35:17 DEBUG    rasa.core.processor  - Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7479867730317441}' and entities '[]'
+2021-01-12 17:35:17 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 4 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-12 17:35:17 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-12 17:38:42 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-12 17:38:42 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-12 17:38:42 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-12 17:38:42 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-12 17:38:42 DEBUG    rasa.core.processor  - Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7479867730317441}' and entities '[]'
+2021-01-12 17:38:42 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 5 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-12 17:38:42 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-12 17:42:18 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-12 17:42:18 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-12 17:42:18 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-12 17:42:18 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-12 17:42:18 DEBUG    rasa.core.processor  - Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7479867730317441}' and entities '[]'
+2021-01-12 17:42:18 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 6 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-12 17:42:18 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 09:55:50 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 09:55:50 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 09:55:50 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 09:55:50 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 09:55:50 DEBUG    rasa.core.processor  - The latest session for conversation ID 'default' has expired.
+2021-01-13 09:55:50 DEBUG    rasa.core.processor  - Starting a new session for conversation ID 'default'.
+2021-01-13 09:55:50 DEBUG    rasa.core.processor  - Policy prediction ended with events '[]'.
+2021-01-13 09:55:50 DEBUG    rasa.core.processor  - Action 'action_session_start' ended with events '[<rasa.shared.core.events.SessionStarted object at 0x7f1ab6361f70>, ActionExecuted(action: action_listen, policy: None, confidence: None)]'.
+2021-01-13 09:55:50 DEBUG    rasa.core.processor  - Received user message '有没有软件工程师的工作' with intent '{'name': 'request_job', 'confidence': 0.8604639764041708}' and entities '[{'entity': 'job', 'value': '软件工程师', 'start': 3, 'end': 8, 'confidence': None, 'extractor': 'MitieEntityExtractor'}]'
+2021-01-13 09:55:50 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 10 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 09:55:50 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 09:55:55 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 09:55:55 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 09:55:55 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 09:55:55 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 09:55:55 DEBUG    rasa.core.processor  - Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7479867730317441}' and entities '[]'
+2021-01-13 09:55:55 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 11 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 09:55:55 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 10:02:58 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 10:02:58 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 10:02:58 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 10:02:58 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 10:02:58 DEBUG    rasa.core.processor  - Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.43493034849483564}' and entities '[]'
+2021-01-13 10:02:58 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 12 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 10:02:58 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 10:03:36 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 10:03:36 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 10:03:36 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 10:03:36 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 10:03:36 DEBUG    rasa.core.processor  - Received user message '' with intent '{'name': None, 'confidence': 0.0}' and entities '[]'
+2021-01-13 10:03:36 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 13 events.
+2021-01-13 10:03:36 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 10:05:27 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 10:05:27 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 10:05:27 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 10:05:27 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 10:05:27 DEBUG    rasa.core.processor  - Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7479867730317441}' and entities '[]'
+2021-01-13 10:05:27 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 14 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 10:05:27 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 10:05:29 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 10:05:29 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 10:05:29 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 10:05:29 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 10:05:29 DEBUG    rasa.core.processor  - Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7479867730317441}' and entities '[]'
+2021-01-13 10:05:29 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 15 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 10:05:29 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 10:06:23 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 10:06:23 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 10:06:23 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 10:06:23 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 10:06:23 DEBUG    rasa.core.processor  - Received user message 'bye' with intent '{'name': 'goodbye', 'confidence': 0.46466039429913847}' and entities '[]'
+2021-01-13 10:06:23 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 16 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 10:06:23 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 10:06:26 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 10:06:26 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 10:06:26 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 10:06:26 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 10:06:26 DEBUG    rasa.core.processor  - Received user message 'bye' with intent '{'name': 'goodbye', 'confidence': 0.46466039429913847}' and entities '[]'
+2021-01-13 10:06:26 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 17 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 10:06:26 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 10:18:45 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 10:18:45 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 10:18:45 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 10:18:45 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 10:18:45 DEBUG    rasa.core.processor  - Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.7159791521201766}' and entities '[]'
+2021-01-13 10:18:45 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 18 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 10:18:45 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 10:18:47 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 10:18:47 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 10:18:47 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 10:18:47 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 10:18:47 DEBUG    rasa.core.processor  - Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.7159791521201766}' and entities '[]'
+2021-01-13 10:18:47 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 19 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 10:18:47 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 10:20:43 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 10:20:43 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 10:20:43 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 10:20:43 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 10:20:43 DEBUG    rasa.core.processor  - Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.7159791521201766}' and entities '[]'
+2021-01-13 10:20:43 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 20 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 10:20:43 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.
+2021-01-13 10:20:46 DEBUG    rasa.core.lock_store  - Issuing ticket for conversation 'default'.
+2021-01-13 10:20:46 DEBUG    rasa.core.lock_store  - Acquiring lock for conversation 'default'.
+2021-01-13 10:20:46 DEBUG    rasa.core.lock_store  - Acquired lock for conversation 'default'.
+2021-01-13 10:20:46 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'default'
+2021-01-13 10:20:46 DEBUG    rasa.core.processor  - Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.7159791521201766}' and entities '[]'
+2021-01-13 10:20:46 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 21 events.
+[93m/home/lfx/Software/Anaconda3/envs/cc/lib/python3.8/site-packages/rasa/shared/utils/io.py:93: UserWarning: No policy ensemble or domain set. Skipping action prediction and execution.
+  More info at https://rasa.com/docs/rasa/policies
+[0m2021-01-13 10:20:46 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'default'.

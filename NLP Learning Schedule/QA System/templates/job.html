@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BootStrap Table使用</title>
+<!--    @*1、Jquery组件引用*@-->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+<!--    @*2、bootstrap组件引用*@-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"5></script>
+
+<!--    @*3、bootstrap table组件以及中文包的引用*@-->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.3/dist/bootstrap-table.min.css">
+    <script src="https://unpkg.com/bootstrap-table@1.15.3/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.15.3/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+</head>
+<body>
+<!--{#     推荐用这种方式，比较灵活#}-->
+<div style="width: 80%;margin: 0 auto">
+    <table id="table" style="table-layout:fixed"></table>
+</div>
+<!--{#     1.先定义一个空表#}-->
+<!--{#     2.用js初始化表，并填充数据#}-->
+<script type="text/javascript">
+    $(function () {
+        $('#table').bootstrapTable({
+            url: '/job/{{title}}',  // 请求数据源的路由
+            dataType: "json",
+            pagination: true, //前端处理分页
+            singleSelect: false,//是否只能单选
+            search: true, //显示搜索框，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+            toolbar: '#toolbar', //工具按钮用哪个容器
+            striped: true, //是否显示行间隔色
+            cache: true, //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pageNumber: 1, //初始化加载第10页，默认第一页
+            pageSize: 10, //每页的记录行数（*）
+            pageList: [10, 20, 50, 100], //可供选择的每页的行数（*）
+            strictSearch: false,//设置为 true启用 全匹配搜索，false为模糊搜索
+            showColumns: true, //显示内容列下拉框
+            showRefresh: true, //显示刷新按钮
+            minimumCountColumns: 2, //当列数小于此值时，将隐藏内容列下拉框
+            clickToSelect: true, //设置true， 将在点击某行时，自动勾选rediobox 和 checkbox
+            height: 600, //表格高度，如果没有设置height属性，表格自动根据记录条数决定表格高度#}
+            uniqueId: "id", //每一行的唯一标识，一般为主键列
+            showToggle: true, //是否显示详细视图和列表视图的切换按钮
+            cardView: false, //是否显示详细视图
+            detailView: false, //是否显示父子表，设置为 true 可以显示详细页面模式,在每行最前边显示+号#}
+            sidePagination: "server", //分页方式：client客户端分页，server服务端分页（*）
+            columns: [{  //定义表头,这个表头必须定义,下边field后边跟的字段名字必须与后端传递的字段名字相同.如:id、name、price
+// 　　　　　　　　　　　　　　　　跟后端的字段名id  name price是完全一样的.
+                field: 'id',
+                title: '序号',
+                align: 'center',  //对齐方式，居中
+                width: '50px',  // 可以写各种样式#}
+				formatter: function (value, row, index) {
+					return index+1;
+				}
+            }, {
+                field: 'employee_quar',
+                title: '名称',
+                align: 'center',
+				width: '160px'
+            }, {
+                field: 'employee_linkman',
+                title: '联系人',
+                align: 'center',
+				width: '80px'
+            },{
+                field: 'employee_phone',
+                title: '联系电话',
+                align: 'center',
+				width: '110%'
+            },{
+                field: 'employee_salary',
+                title: '薪水',
+                align: 'center',
+				width: '100%'
+
+            },{
+                field: 'employee_unitName',
+                title: '公司名称',
+				formatter : function(value, row, index, field){
+					if(!value)
+					{
+						value=" "
+					}
+                    return "<span style='display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;' title='" + value + "'>" + value + "</span>";
+                },
+                cellStyle : function(value, row, index, field){
+                    return {
+                        css: {
+                            "white-space": "nowrap",
+                            "text-overflow": "ellipsis",
+                            "overflow": "hidden",
+                            "max-width":"300px"
+                        }
+                    };
+                }  
+            },{
+                field: 'employee_address',
+                title: '地址',
+				formatter : function(value, row, index, field){
+					if(!value)
+					{
+						value=" "
+					}
+                    return "<span style='display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;' title='" + value + "'>" + value + "</span>";
+                },
+                cellStyle : function(value, row, index, field){
+                    return {
+                        css: {
+                            "white-space": "nowrap",
+                            "text-overflow": "ellipsis",
+                            "overflow": "hidden",
+                            "max-width":"300px"
+                        }
+                    };
+                }  
+            },{
+                field: 'employee_TextFd2',
+                title: '岗位要求/联系方式',
+				formatter : function(value, row, index, field){
+					if(!value)
+					{
+						value=" "
+					}
+                    return "<span style='display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;' title='" + value + "'>" + value + "</span>";
+                },
+                cellStyle : function(value, row, index, field){
+                    return {
+                        css: {
+                            "white-space": "nowrap",
+                            "text-overflow": "ellipsis",
+                            "overflow": "hidden",
+                            "max-width":"300px"
+                        }
+                    };
+                }  
+            },{
+                field: 'employee_TextFd3',
+                title: '福利待遇',
+				formatter : function(value, row, index, field){
+					if(!value)
+					{
+						value=" "
+					}
+                    return "<span style='display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;' title='" + value + "'>" + value + "</span>";
+                },
+                cellStyle : function(value, row, index, field){
+                    return {
+                        css: {
+                            "white-space": "nowrap",
+                            "text-overflow": "ellipsis",
+                            "overflow": "hidden",
+                            "max-width":"300px"
+                        }
+                    };
+                }  
+            },{
+                field: 'employee_TextFd4',
+                title: '注意事项',
+				formatter : function(value, row, index, field){
+					if(!value)
+					{
+						value=" "
+					}
+                    return "<span style='display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;' title='" + value + "'>" + value + "</span>";
+                },
+                cellStyle : function(value, row, index, field){
+                    return {
+                        css: {
+                            "white-space": "nowrap",
+                            "text-overflow": "ellipsis",
+                            "overflow": "hidden",
+                            "max-width":"300px"
+                        }
+                    };
+                }  
+            }
+            ],
+        });
+    });
+
+
+</script>
+</body>
+</html>

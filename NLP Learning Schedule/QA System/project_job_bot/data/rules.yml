@@ -1,0 +1,133 @@
+rules:
+- rule: Activate form
+  steps:
+  - intent: request_job
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+- rule: Submit form
+  condition:
+  # Condition that form is active.
+  - active_loop: jobsearch_form
+  steps:
+  # Form is deactivated
+  - action: jobsearch_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+
+- rule: Example of an unhappy path
+  condition:
+  # Condition that form is active.
+  - active_loop: jobsearch_form
+  steps:
+  # This unhappy path handles the case of an intent `chitchat`.
+  - intent: chitchat
+  - action: action_default_fallback
+  # Return to form after handling the `chitchat` intent
+  - action: jobsearch_form
+  - active_loop: jobsearch_form
+
+- rule: utt_greet
+  steps:
+    - intent: greet
+    - action: utter_answer_greet
+- rule: utt_greet
+  steps:
+    - intent: goodbye
+    - action: utter_answer_goodbye
+
+- rule: Activate form1
+  steps:
+  - intent: ask_company
+  - action: companyask_form
+  - active_loop: companyask_form
+- rule: Submit form1
+  condition:
+  # Condition that form is active.
+  - active_loop: companyask_form
+  steps:
+  # Form is deactivated
+  - action: companyask_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+
+- rule: Activate form2
+  steps:
+  - intent: ask_welfare
+  - action: welfareask_form
+  - active_loop: welfareask_form
+- rule: Submit form2
+  condition:
+  # Condition that form is active.
+  - active_loop: welfareask_form
+  steps:
+  # Form is deactivated
+  - action: welfareask_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+
+- rule: Activate form3
+  steps:
+  - intent: ask_welfare_yorn
+  - action: welfareyorn_form
+  - active_loop: welfareyorn_form
+- rule: Submit form3
+  condition:
+  # Condition that form is active.
+  - active_loop: welfareyorn_form
+  steps:
+  # Form is deactivated
+  - action: welfareyorn_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+
+- rule: Activate form4
+  steps:
+  - intent: ask_salary
+  - action: salaryask_form
+  - active_loop: salaryask_form
+- rule: Submit form4
+  condition:
+  # Condition that form is active.
+  - active_loop: salaryask_form
+  steps:
+  # Form is deactivated
+  - action: salaryask_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+
+- rule: Activate form5
+  steps:
+  - intent: ask_address
+  - action: addressask_form
+  - active_loop: addressask_form
+- rule: Submit form5
+  condition:
+  # Condition that form is active.
+  - active_loop: addressask_form
+  steps:
+  # Form is deactivated
+  - action: addressask_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+
+- rule: Activate form6
+  steps:
+  - intent: ask_jobrequirement
+  - action: jobrequirement_form
+  - active_loop: jobrequirement_form
+- rule: Submit form6
+  condition:
+  # Condition that form is active.
+  - active_loop: jobrequirement_form
+  steps:
+  # Form is deactivated
+  - action: jobrequirement_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
