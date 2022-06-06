@@ -18,6 +18,7 @@
 7. 【书籍】[邱锡鹏 神经网络与深度学习](https://nndl.github.io/nndl-book.pdf) 复旦大学，全面介绍深度学习，配套资源均在Github，也有[课程视频](https://www.bilibili.com/video/BV13b4y1177W?spm_id_from=333.999.0.0)
 8. 【书籍】[从零构建知识图谱：技术、方法与案例](https://weread.qq.com/web/reader/3b332a007260a5613b3feb6)
 9. 【仓库】[东南大学《知识图谱》研究生课程](https://github.com/npubird/KnowledgeGraphCourse)
+10. 【仓库】[深度学习从入门到精通](https://github.com/Mikoto10032/DeepLearning)
 
 #### 中级
 
@@ -25,7 +26,6 @@
    
    - 【仓库 | 课程】[pytorch_BiLSTM 命名实体识别 手写代码](https://www.bilibili.com/video/BV1h341187RA)
    - 【在线教程】[百度paddle NLP经典项目集](https://aistudio.baidu.com/aistudio/projectdetail/1535371)
-   - 
 2. ##### 强化数学知识
 
 #### 精通
@@ -34,8 +34,13 @@
 
    - 【仓库】[李沐 深度学习论文精读](https://github.com/mli/paper-reading)
    - 【官网】[Paper weekly](https://www.paperweekly.site/)
+   - 【官网】[connectedpapers](https://www.connectedpapers.com/) paper间相互引用图
+   - 【官网】[researchgate](https://www.researchgate.net/) 寻找某一作者的所有文章
 
 2. ##### 参加比赛
+
+   - 【仓库】[nlper-arsenal](https://github.com/TingFree/NLPer-Arsenal) nlp竞赛军火库，里面有当前可参加的比赛，以及往期比赛的开源代码和方案回顾
+   - 【博客】[寻找数据集](https://aistudio.baidu.com/paddle/forum/topic/show/992880)
 
 #### 专家
 
@@ -46,7 +51,6 @@
     - 【仓库】[事件抽取资料综述总结](https://github.com/xiaoqian19940510/Event-Extraction)
     - 【仓库】[中文复合事件抽取](https://github.com/liuhuanyong/ComplexEventExtraction)
 
- 2. 
 
 ### 资源
 
